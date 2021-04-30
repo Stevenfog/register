@@ -28,28 +28,7 @@ class Model_login extends CI_Model {
 			$this->session->set_flashdata('user_unknown', 'This username is not registered!');
 			redirect('login');
 		}
-		/*$this->db->where('username', $username);
-		$this->db->where('password', $password);
-		$query = $this->db->get('user');
-		if($query->num_rows() > 0){
-			foreach ($query->result() as $row) {
-				$sess = array ('username' =>$row->username, 'password' => $row->password);
-
-				//if($data['level']=="1"){
-				//redirect('index.php/adminberanda');
-			//}else{
-			//	redirect('index.php/userberanda');
-			//}
-			}
-			$this->session->get_userdata($sess);
-
-		}
-		else{
-			$this->session->set_flashdata('info','Sorry, Your Username and Password are incorrect !
-			 Please Try Again.');
-			redirect('login');
-		}
-		*/
+	
 	}
 
 	public function security(){
